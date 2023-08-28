@@ -1,5 +1,7 @@
 import React from 'react';
-import Birds from '../Components/Birds/Birds';
+import Birds from '../Pages/Birds/Birds';
+import { Routes, Route } from 'react-router-dom'
+import Home from '../Pages/Home/Home';
 
 function App() {
   return (
@@ -10,7 +12,10 @@ function App() {
         </h1>
       </header>
       <main>
-        <Birds/>
+        <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/Birds' element={<Birds/>} />
+        </Routes>
       </main>
     </>
   );

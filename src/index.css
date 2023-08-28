@@ -116,3 +116,16 @@ header a {
   padding: 1rem;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  color: white;
+  padding: 1em;
+  font-size: 1.2em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
