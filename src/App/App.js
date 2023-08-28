@@ -2,6 +2,7 @@ import React from 'react';
 import Birds from '../Pages/Birds/Birds';
 import { Routes, Route } from 'react-router-dom'
 import Home from '../Pages/Home/Home';
+import BirdDetails from '../Pages/BirdDetails/BirdDetails';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/Birds' element={<Birds/>} />
+        <Route path='/details/:id' element={<BirdDetails />} />
         </Routes>
       </main>
     </>
